@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
 //        recyclerView.setHasFixedSize(true);
 //
 //        // use a linear layout manager
-//        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
+//        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL, false);
 //        recyclerView.setLayoutManager(layoutManager);
 //
 //        // specify an adapter (see also next example)
