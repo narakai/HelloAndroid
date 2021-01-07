@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/preference_activity_title_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/preference_activity_title_text"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="@string/main_title"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/preference_activity_title_image"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center_vertical"
+        android:scaleType="fitCenter"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/snow" />
+</FrameLayout>
