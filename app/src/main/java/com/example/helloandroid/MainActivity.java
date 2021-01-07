@@ -1,6 +1,8 @@
 package com.example.helloandroid;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -52,6 +54,24 @@ public class MainActivity extends AppCompatActivity {
 //        };
 //        countDownTimer.start();
 //        progressBar.setVisibility(View.VISIBLE);
+
+
+
+//        //recyclerview
+//        setContentView(R.layout.recyclerview);
+//        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+//        // use this setting to improve performance if you know that changes
+//        // in content do not change the layout size of the RecyclerView
+//        recyclerView.setHasFixedSize(true);
+//
+//        // use a linear layout manager
+//        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
+//        recyclerView.setLayoutManager(layoutManager);
+//
+//        // specify an adapter (see also next example)
+//        String[] myDataset = {"Apple", "Pair", "Banana", "Apple", "Pair", "Banana", "Apple", "Pair", "Banana", "Apple", "Pair", "Banana"};
+//        RecyclerView.Adapter adapter = new MyAdapter(myDataset);
+//        recyclerView.setAdapter(adapter);
     }
 
     @Override
