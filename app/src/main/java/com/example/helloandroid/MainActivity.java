@@ -1,17 +1,23 @@
 package com.example.helloandroid;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.os.Handler;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewStub;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -24,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
 //        TextView tv = findViewById(R.id.preference_activity_title_text);
 //        tv.setText("New Title");
-//        ProgressBar progressBar = findViewById(R.id.progress_circular);
+        ProgressBar progressBar = findViewById(R.id.progress_circular);
 
 //        //代码创建view，设置属性
 //        TextView tv = new TextView(this);
@@ -38,40 +44,50 @@ public class MainActivity extends AppCompatActivity {
 //        tv.setLayoutParams(lp);
 //        linearLayout.addView(tv);
 
-//        countDownTimer = new CountDownTimer(20000, 1000) {
-//            @Override
-//            public void onTick(long millisUntilFinished) {
-//
-//            }
-//
-//            @Override
-//            public void onFinish() {
-//                //view stub
-//                ViewStub viewStub = findViewById(R.id.view_stub);
-//                viewStub.inflate();
-//                progressBar.setVisibility(View.GONE);
-//            }
-//        };
-//        countDownTimer.start();
-//        progressBar.setVisibility(View.VISIBLE);
+        countDownTimer = new CountDownTimer(20000, 1000) {
+            @Override
+            public void onTick(long millisUntilFinished) {
+
+            }
+
+            @Override
+            public void onFinish() {
+                //view stub
+                ViewStub viewStub = findViewById(R.id.view_stub);
+                viewStub.inflate();
+                progressBar.setVisibility(View.GONE);
+            }
+        };
+        countDownTimer.start();
+        progressBar.setVisibility(View.VISIBLE);
 
 
+//        LinearLayout linearLayout = findViewById(R.id.include_1);
+//        TextView tv1 = linearLayout.findViewById(R.id.include_tv1);
+//        tv1.setText("I am changed");
 
-//        //recyclerview
+
 //        setContentView(R.layout.recyclerview);
 //        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
-//        // use this setting to improve performance if you know that changes
-//        // in content do not change the layout size of the RecyclerView
 //        recyclerView.setHasFixedSize(true);
 //
-//        // use a linear layout manager
 //        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL, false);
 //        recyclerView.setLayoutManager(layoutManager);
 //
-//        // specify an adapter (see also next example)
 //        String[] myDataset = {"Apple", "Pair", "Banana", "Apple", "Pair", "Banana", "Apple", "Pair", "Banana", "Apple", "Pair", "Banana"};
 //        RecyclerView.Adapter adapter = new MyAdapter(myDataset);
 //        recyclerView.setAdapter(adapter);
+//
+//        Handler handler = new Handler();
+//        handler.postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//                myDataset[0] = "Corntree";
+//                adapter.notifyDataSetChanged();
+//            }
+//        }, 5000);
+
+
     }
 
     @Override

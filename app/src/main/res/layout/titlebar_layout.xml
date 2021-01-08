@@ -6,8 +6,12 @@
     android:background="@color/colorPrimary">
 
     <TextView
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/corner"
+        android:layout_gravity="center"
         android:id="@+id/preference_activity_title_text"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="45dp"
         android:gravity="center"
         android:text="@string/main_title"
@@ -20,6 +24,6 @@
         android:layout_height="25dp"
         android:layout_gravity="center_vertical"
         android:scaleType="fitCenter"
-        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
         android:src="@drawable/snow" />
 </FrameLayout>
