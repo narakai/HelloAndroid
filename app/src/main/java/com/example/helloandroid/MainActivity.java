@@ -26,11 +26,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.page);
+        setContentView(R.layout.motion_test);
 
 //        TextView tv = findViewById(R.id.preference_activity_title_text);
 //        tv.setText("New Title");
-        ProgressBar progressBar = findViewById(R.id.progress_circular);
+//        ProgressBar progressBar = findViewById(R.id.progress_circular);
 
 //        //代码创建view，设置属性
 //        TextView tv = new TextView(this);
@@ -44,22 +44,22 @@ public class MainActivity extends AppCompatActivity {
 //        tv.setLayoutParams(lp);
 //        linearLayout.addView(tv);
 
-        countDownTimer = new CountDownTimer(20000, 1000) {
-            @Override
-            public void onTick(long millisUntilFinished) {
-
-            }
-
-            @Override
-            public void onFinish() {
-                //view stub
-                ViewStub viewStub = findViewById(R.id.view_stub);
-                viewStub.inflate();
-                progressBar.setVisibility(View.GONE);
-            }
-        };
-        countDownTimer.start();
-        progressBar.setVisibility(View.VISIBLE);
+//        countDownTimer = new CountDownTimer(20000, 1000) {
+//            @Override
+//            public void onTick(long millisUntilFinished) {
+//
+//            }
+//
+//            @Override
+//            public void onFinish() {
+//                //view stub
+//                ViewStub viewStub = findViewById(R.id.view_stub);
+//                viewStub.inflate();
+//                progressBar.setVisibility(View.GONE);
+//            }
+//        };
+//        countDownTimer.start();
+//        progressBar.setVisibility(View.VISIBLE);
 
 
 //        LinearLayout linearLayout = findViewById(R.id.include_1);
